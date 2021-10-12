@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <title>ORINOCO</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <link rel="stylesheet" href="../sass/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap"
+      rel="stylesheet "
+    />
+  </head>
+  <body>
+    <!-- Principal conteneur -->
+    <div class="page-container">
+      <header class="headBlock">
+        <div class="partie-logo">
+          <div class="logorinoco">
+            <img src="../assets/img/shopping_cart_400.png" alt="" />
+          </div>
+          <div class="textorinoco">orinoco</div>
+        </div>
+        <div class="partie-nav">
+          <div class="nav-item">
+            <a href="../index.html" class="nav-link">Accueil</a>
+          </div>
+          <div class="nav-item">
+            <a class="nav-link cartCount" href="./panier.html"
+              ><i class="fas fa-shopping-basket"></i>Panier</a
+            >
+          </div>
+        </div>
+      </header>
+      <!-- CONTAINER BETWEEN HEADER & FOOTER-->
+      <main id="panier" class="panier">
+        <h1>Orinoco, ours en peluche faits à la main</h1>
+        <h2 class="h2_sous_h1">
+          Mes sélections dans le panier, on a en colonne:<br />
+          <span>Nom, couleur, quantité, prix.Unit et Prix.T</span>
+        </h2>
+        <div id="container-select-panier" class="container-select-panier">
+          <div id="container-recap" class="container-recap"></div>
+
+          <div class="divbtn">
+            <div class="btn">
+              <a href="panier.html" id="supcontenu" class="supcontenu"
+                >Vider le panier</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Coordonnées du client-->
+        <article class="section-form">
+          <h2>Entrez vos Coordonnées en dessous</h2>
+          <div class="container">
+            <form
+              method="POST"
+              name="form_1"
+              action="#"
+              id="form_1"
+              class="form_1"
+            >
+              <fieldset>
+                <legend>Nom et Prénom</legend>
+                <div class="form-group">
+                  <label for="name"> Nom:</label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Exemple: BONTI"
+                    class="name"
+                    minlength="3"
+                    maxlength="40"
+                    autofocus
+                  />
+                  <br />
+                  <small id="nom_m"></small>
+                </div>
+
+                <div class="form-group">
+                  <label for="prename"> Prénom:</label>
+                  <input
+                    type="text"
+                    id="prename"
+                    name="prename"
+                    placeholder="Exemple: Michel"
+                    class="prename"
+                    minlength="3"
+                    maxlength="40"
+                  />
+                  <br />
+                  <small id="prenom_m"></small>
+                </div>
+              </fieldset>
+              <fieldset>
+                <legend>Les deux Adresses</legend>
+                <div class="form-group">
+                  <label for="email"> Email: </label>
+                  <input
+                    type="text"
+                    id="email"
+                    name="email"
+                    placeholder="monEmail@googp.xx"
+                    class="email"
+                  /><small id="email_m"></small>
+                </div>
+
+                <div class="form-group">
+                  <label for="text"> Adresse: </label>
+                  <input
+                    id="text"
+                    name="text"
+                    placeholder="n°, voie, boite postale..."
+                    class="text"
+                    type="text"
+                    maxlength="60"
+                  />
+                  <small id="adresse_m"></small>
+                </div>
+              </fieldset>
+              <fieldset>
+                <legend>Entrez une ville</legend>
+                <div class="form-group">
+                  <label for="city"> Ville: </label>
+                  <input
+                    type="text"
+                    id="city"
+                    name="city"
+                    placeholder="Paris"
+                    class="city"
+                    minlength="3"
+                    maxlength="30"
+                  />
+                  <small id="ville_m"></small>
+                </div>
+              </fieldset>
+              <!--Bouton Confirmation de mes données -->
+              <div class="form-group">
+                <button
+                  id="confirm-formulaire"
+                  class="confirm-formulaire"
+                  name="confirm-formulaire"
+                  type="submit"
+                >
+                  Confirm & valid
+                </button>
+              </div>
+            </form>
+          </div>
+        </article>
+
+        <!-- Bouton pour valider ma commande-->
+        <!-- <div class="divbtn-valid">
+          <div class="btn">
+            <a
+              href="confirmation.html"
+              id="valid-commande"
+              class="valid-commande"
+              >Valider commande</a
+            >
+          </div>
+        </div> -->
+      </main>
+      <footer class="footerBlock">
+        <h2 class="text-center white">Les réseaux sociaux</h2>
+        <div class="col-sm-12">
+          <div class="col-sm-3">
+            <a href="https://www.twitter.com">Twitter</a>
+          </div>
+          <div class="col-sm-3">
+            <a href="https://www.facebook.com">Facebook</a>
+          </div>
+          <!-- <div class="col-sm-3">
+            <a href="https://www.dribble.com">Dribble</a>
+          </div> -->
+          <div class="col-sm-3">
+            <a href="https://www.instagram.com">Instagram</a>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <h2>Assistance 24H/24</h2>
+          <div class="lesPhones">
+            <p class="phone">Tel 1 +33XXXXXXX13</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="../src/panier.js" defer></script>
+  </body>
+</html>

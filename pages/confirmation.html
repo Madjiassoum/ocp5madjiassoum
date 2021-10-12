@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <title>ORINOCO</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <link rel="stylesheet" href="../sass/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap"
+      rel="stylesheet "
+    />
+  </head>
+  <body>
+    <!-- Principal conteneur -->
+    <div class="page-container">
+      <header class="headBlock">
+        <div class="partie-logo">
+          <div class="logorinoco">
+            <img src="../assets/img/shopping_cart_400.png" alt="" />
+          </div>
+          <div class="textorinoco">orinoco</div>
+        </div>
+        <div class="partie-nav">
+          <div class="nav-item">
+            <a href="../index.html" class="nav-link">Accueil</a>
+          </div>
+          <div class="nav-item">
+            <a class="nav-link cartCount" href="./panier.html"
+              ><i class="fas fa-shopping-basket"></i>Panier</a
+            >
+          </div>
+        </div>
+      </header>
+      <main id="confirmation" class="confirmation">
+        <h1>Orinoco, ours en peluche faits à la main</h1>
+        <!-- Lister mes produits selectionnés-->
+        <article>
+          <h2>
+            Orinoco vous remercie de votre achat.<br />Ci-dessous le resumé:
+          </h2>
+          <div id="confiCommand" class="confiCommande">
+            <p class="montantCom">
+              Le montant payé:<span class="montantComSpan"></span>
+            </p>
+            <p class="numCom">
+              Le numéro commande: <span class="numComSpan"></span>
+            </p>
+            <p class="dateHeureCom">
+              Date commande: <span class="dateHeureComSpan"></span>
+            </p>
+          </div>
+        </article>
+      </main>
+      <footer class="footerBlock">
+        <h2 class="text-center white">Les réseaux sociaux</h2>
+        <div class="col-sm-12">
+          <div class="col-sm-3">
+            <a href="https://www.twitter.com">Twitter</a>
+          </div>
+          <div class="col-sm-3">
+            <a href="https://www.facebook.com">Facebook</a>
+          </div>
+          <div class="col-sm-3">
+            <a href="https://www.instagram.com">Instagram</a>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <h2>Assistance 24H/24</h2>
+          <div class="lesPhones">
+            <p class="phone">Tel 1 +33XXXXXXX13</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script defer src="../src/confirmation.js"></script>
+  </body>
+</html>

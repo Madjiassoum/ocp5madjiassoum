@@ -1,0 +1,898 @@
+/* DESKTOP and sup */
+$color-primaire: #b492df; //1ere couleur //
+$color-secondaire: rgba(238, 66, 95, 0.555);
+$backgAhref: rgba(210, 210, 210, 1);
+@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,500&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgba(250, 250, 250, 1);
+}
+.page-container {
+  display: block;
+  height: auto;
+  margin: auto;
+  padding-bottom: 0;
+  margin-bottom: 0px;
+  padding-top: 0.1em;
+  box-sizing: border-box;
+}
+a {
+  color: #000;
+  text-decoration: none;
+}
+h1 {
+  text-align: center;
+  width: 90%;
+  font-size: 1.7em;
+  margin: 1em auto;
+}
+
+h2 {
+  font-size: 1.1em;
+  text-align: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 1em auto;
+  border-radius: 1em;
+  height: auto;
+  background-color: rgba(250, 250, 250, 1);
+}
+
+.bloc,
+main,
+.bloc .container,
+.section-form,
+.section-form .container {
+  margin: auto;
+  width: 95%;
+}
+//! header commun de nos pages DESKTOP
+.headBlock {
+  background-color: rgba(235, 232, 227, 0.3);
+  border-radius: 0.5em;
+  padding: 0 1em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.2em auto;
+  width: 93%;
+  border: 0.3em solid rgba(46, 102, 38, 0.1);
+  .partie-logo {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    .textorinoco {
+      font-size: 2.5em;
+      align-self: center;
+      margin-left: 1em;
+      padding: 0;
+      margin: 0 0 0 2em;
+      font-weight: bold;
+      letter-spacing: 0.2em;
+      font-family: "Pangolin", sans-serif;
+    }
+    div img {
+      width: 4em;
+      height: auto;
+      font-size: 1em;
+      padding: 0;
+      margin: 0;
+      object-fit: cover;
+    }
+  }
+  .partie-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 0;
+    margin: 0;
+    .nav-item {
+      padding: 0.2em 0.5em;
+      background-color: rgba(5, 87, 238, 0.3);
+      border: 2px solid rgba(196, 191, 191, 0.51);
+      margin-right: 1em;
+      letter-spacing: 0.2em;
+      font-weight: bold;
+      border-radius: 1em;
+      display: flex;
+      align-items: center;
+      a {
+        margin: 0;
+        padding: 0;
+      }
+    }
+  }
+}
+.nav > li:hover {
+  border: 2px solid rgba(64, 92, 134, 1);
+  box-shadow: 1px 3px 2px gray;
+  text-shadow: rgb(13, 13, 14) 2px 3px 5px;
+}
+//!Page d'accueil des produits
+.container-produits {
+  width: 95%;
+  height: auto;
+  padding: 1em;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  .produit {
+    width: 45%;
+    align-self: center;
+    align-content: center;
+    margin-right: 3%;
+    margin-bottom: 1em;
+    border: 1px solid rgb(230, 230, 230);
+    background-color: rgb(220, 220, 220);
+    border-top-right-radius: 1.5em;
+    border-top-left-radius: 1.5em;
+    border-bottom-right-radius: 1.51em;
+    border-bottom-left-radius: 1.51em;
+    p {
+      text-align: center;
+    }
+    h2 {
+      margin: 0;
+      font-size: 1.3em;
+    }
+    .description {
+      margin: 0 1em 0 1em;
+    }
+    .price {
+      font-weight: bold;
+      font-size: 1em;
+    }
+    .photo {
+      margin: 0.5em 1em 0 1em;
+    }
+    p {
+      margin-bottom: 0em;
+      img {
+        border-top-right-radius: 1em;
+        border-top-left-radius: 1em;
+        width: 100%;
+        height: 20em;
+        padding: 0;
+        margin: 0.3em -0.3em 0 -0.3em;
+        object-fit: cover;
+      }
+    }
+    .ahref {
+      margin: 1em 0em 1.5em 0em;
+    }
+    a {
+      background-color: rgba(245, 245, 245, 0.8);
+      font-size: 1em;
+      padding: 0.5em 0;
+      font-weight: bold;
+      padding: 0.5em 1em;
+      border-radius: 1em;
+      margin-top: 0.5em;
+      margin-bottom: 0.5em;
+    }
+    a:hover {
+      opacity: 0.7;
+      border: 0.07em solid rgb(174, 174, 174);
+      font-size: 1em;
+      color: rgb(133, 63, 63);
+    }
+  }
+}
+
+//! page produit choisi
+.produit-seul {
+  border: 0.1em solid rgb(245, 245, 245);
+  width: 95%;
+  .produit {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    padding: 0.1em;
+    margin-bottom: 2em;
+    margin: auto;
+    background-color: rgba(180, 180, 180, 0.1);
+    border: 0.4em rgba(200, 200, 200, 0.4) solid;
+    .photo {
+      text-align: center;
+      padding-top: 0.5em;
+      margin: auto;
+      img {
+        border-top-right-radius: 1.5em;
+        border-top-left-radius: 1.5em;
+        height: 24em;
+        padding: 0;
+        object-fit: cover;
+      }
+    }
+    .lesOptions {
+      margin: 0 1em 0 1em;
+      display: flex;
+      flex-direction: row;
+      form {
+        text-align: center;
+        font-size: 1em;
+        margin: 0.5em auto;
+        font-weight: bold;
+        option {
+          background-color: pink;
+        }
+        label {
+          font-size: 1em;
+          font-weight: bold;
+        }
+      }
+    }
+    .description {
+      margin: 0.2em 1em 0.2em 1em;
+      padding: 0.5em;
+      font-size: 1.1em;
+      background-color: rgba(225, 225, 225, 0.31);
+    }
+    .price {
+      margin: 0.3em 0.2em 0.3em 0.5em;
+      font-size: 1.2em;
+      text-align: center;
+      font-family: "Pangolin", sans-serif;
+    }
+    .title {
+      font-size: 1.5em;
+      margin: 0.3em 0.5em 0.2em 0.5em;
+      font-family: "Pangolin", sans-serif;
+    }
+  }
+
+  .divbtn {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: auto;
+    .ajout {
+      cursor: pointer;
+      font-size: 1em;
+      margin: 0 0 1em 0;
+    }
+    .ajout:hover {
+      opacity: 0.8;
+      color: blue;
+    }
+  }
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+//! Partie panier
+.panier {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: 95%;
+  border: 0.35em dotted rgba(102, 128, 124, 0.534);
+  h2 {
+    text-align: center;
+    font-size: 1.2em;
+    color: rgba(192, 31, 98, 0.849);
+    span {
+      text-decoration: underline;
+      color: blue;
+    }
+  }
+  h1 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 0.2em auto;
+  }
+  .container-select-panier {
+    margin: 0.2em 0 0.2em 0;
+    .container-recap {
+      text-align: center;
+      display: block;
+      flex-direction: row;
+      padding: 0;
+      margin: 0 auto;
+      align-content: space-around;
+      background-color: rgba(220, 220, 230, 0.2);
+      border: 0.1em solid rgba(180, 180, 180, 0.2);
+      .petitBouton {
+        background-color: rgba(155, 155, 155, 0.3);
+        font-size: 0.8em;
+        font-weight: bold;
+        color: black;
+        border-radius: 0.5em;
+        margin: auto;
+        padding: 0.1em 0.4em 0.1em 0.4em;
+      }
+      .petitBouton:hover {
+        color: white;
+        background-color: rgba(118, 137, 197, 0.6);
+        cursor: pointer;
+      }
+      p {
+        display: inline-block;
+        width: 15%;
+        margin: 0;
+        font-weight: bold;
+        background-color: rgba(190, 190, 190, 0.1);
+        border: 0.01em dotted rgb(253, 253, 253);
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+    .totalColonne {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      background-color: rgba(226, 58, 80, 0.26);
+      margin: 0.5em auto;
+      padding: 0.5em;
+      text-decoration: none;
+      width: auto;
+      span {
+        font-weight: bold;
+        margin-right: 1em;
+        font-size: 1em;
+        font-family: century;
+      }
+      span:last-child {
+        padding: 0.1em 1em;
+        border: 0.1em solid rgb(241, 230, 230);
+        background-color: rgb(225, 225, 225);
+        animation: 2s TextClignotant infinite ease-in-out both;
+        @keyframes TextClignotant {
+          0% {
+            color: blue;
+            font-weight: bold;
+          }
+          50% {
+            color: black;
+            font-weight: bold;
+          }
+          100% {
+            font-weight: bold;
+            color: red;
+          }
+        }
+      }
+    }
+  }
+  .divbtn-valid,
+  .divbtn {
+    display: flex;
+    .btn {
+      margin: 0.2em auto;
+      font-size: 1em;
+    }
+  }
+
+  .messagePanierVide {
+    font-size: 1.2em;
+    text-align: center;
+    margin: 0 0.6em 0 0.6em;
+    div {
+      margin: 0.5em;
+      font-weight: bold;
+      color: rgba(21, 21, 168, 0.842);
+      span,
+      i {
+        color: red;
+      }
+    }
+  }
+}
+//! traitement page panier display flex et none
+
+.card .container a {
+  text-decoration: none;
+}
+
+//?formulaire form de panier
+.section-form {
+  width: 85%;
+  h2 {
+    font-size: 1.3em;
+    margin-bottom: 0;
+    text-decoration: underline;
+  }
+  .container {
+    width: 100%;
+    .form_1 {
+      width: 95%;
+      height: auto;
+      margin: auto;
+      fieldset {
+        background-color: #fcf4087c;
+        margin-bottom: 0.5em;
+        legend {
+          color: rgb(133, 36, 36);
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
+/* formulaire pour PANIER COORDONNEES */
+.form_1 {
+  .form-group {
+    display: flex;
+    margin: auto;
+    margin-bottom: 0.5em;
+    label {
+      display: inline-block;
+      font-size: 1em;
+      margin-right: 0.2em;
+      font-weight: bold;
+    }
+    input {
+      padding: 0.2em;
+      border: 0.1em solid #b7a1e4;
+      border-radius: 0.3em;
+      width: 100%;
+      text-align: center;
+    }
+    input:focus {
+      outline: 0;
+      border-color: rgb(68, 58, 129);
+      background-color: rgba(214, 203, 203, 0.2);
+    }
+    .confirm-formulaire {
+      margin: auto;
+      text-align: center;
+      background-color: #83910cf6;
+      border: 0.2em solid #48417077;
+      opacity: 0.9;
+      border-radius: 1em;
+      font-weight: bold;
+      cursor: pointer;
+      font-size: 0.8em;
+      margin-bottom: 0.2em;
+      padding: 0.3em 0.5em 0.3em 0.5em;
+      color: #fff;
+    }
+    .confirm-formulaire:hover {
+      background-color: rgb(73, 96, 138);
+      border: 0.2em solid #16b7df;
+      color: #000;
+    }
+  }
+  .divbtn {
+    display: block;
+    margin: auto;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    background-color: white;
+    border: 0.01em solid transparent;
+    .btn {
+      margin: auto;
+      text-align: center;
+      margin: 0.51em auto 0.5em auto;
+    }
+  }
+  .form-group:first-child {
+    margin-top: 0.5em;
+  }
+}
+
+#nom_m,
+#prenom_m,
+#email_m,
+#adresse_m,
+#ville_m {
+  display: block;
+  color: #000;
+  font-weight: 300;
+  font-style: italic;
+  padding: 0.2em;
+}
+
+.page-container main .btn {
+  text-align: center;
+  padding: 0.4em 0.7em;
+  border-radius: 2em;
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-top: 0.5em;
+  margin-bottom: 0.51em;
+  background: -webkit-linear-gradient(
+    0deg,
+    $color-primaire 5%,
+    $color-secondaire 100%
+  );
+  background: -moz-linear-gradient(
+    0deg,
+    $color-primaire 5%,
+    $color-secondaire 100%
+  );
+  background: -o-linear-gradient(
+    0deg,
+    $color-primaire 5%,
+    $color-secondaire 100%
+  );
+  background: linear-gradient(0deg, $color-primaire 5%, $color-secondaire 100%);
+}
+
+//! **** LA PAGE CONFIRMATION ******
+.confirmation {
+  // width: 95%;
+  margin-bottom: 1.5em;
+  margin-top: 1em;
+  border: 0.3em solid rgb(129, 154, 160);
+
+  h2 {
+    color: rgb(179, 86, 10);
+  }
+  .confiCommande {
+    // border: 0.51em solid blue;
+    p {
+      color: black;
+      font-size: 1em;
+      font-weight: 600;      
+      text-align: center;
+      margin: .8em;
+      span {
+        padding: 0.3em 0.5em;
+        font-size: 0.9em;
+        background-color: rgba(240, 234, 234, 0.555);
+        color: rgb(22, 37, 236);
+        border: 0.01em solid rgb(190, 190, 190);
+      }
+    }
+  }
+}
+
+/* Special footer */
+.footerBlock {
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  background-color: rgba(226, 230, 177, 1);
+  margin: 0.2em auto;
+  padding-bottom: 0.4em;
+  margin-bottom: 0.3em;
+  border-radius: 1em;
+  h2 {
+    text-align: center;
+    font-size: 0.9em;
+    margin: 0;
+  }
+  .col-sm-12 {
+    display: flex;
+    border-bottom: 0.1em solid rgb(162, 158, 184);
+    .col-sm-3 {
+      margin: auto;
+      text-align: center;
+      margin-bottom: 0.4em;
+    }
+    a {
+      color: rgba(0, 0, 0, 0.7);
+      border: 0.1em solid gray;
+      border-radius: 1em;
+      background-color: rgb(109, 121, 224);
+      font-weight: bold;
+      text-decoration: none;
+      font-size: 0.8em;
+      padding: 0.1em 0.5em;
+    }
+    a:hover {
+      color: rgba(0, 0, 0, 1);
+      background-color: rgba(220, 220, 220, 1);
+      border-radius: 0.71em;
+    }
+  }
+  .col-sm-4 {
+    display: flex;
+    flex-direction: column;
+    margin: 0.3em 0 0 0;
+    h2 {
+      text-align: center;
+      font-size: 0.9em;
+      margin: 0;
+    }
+    .lesPhones {
+      margin: 0;
+      .phone {
+        margin: auto;
+        text-align: center;
+        font-size: 0.6em;
+      }
+    }
+  }
+}
+
+/*  TABLETTE de 600px à 1024px */
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+  body {
+    margin: 0px;
+    padding: 0;
+    justify-content: center;
+  }
+  .page-container {
+    display: block;
+    height: auto;
+    margin: auto;
+    margin-bottom: 0px;
+    justify-content: center;
+    box-sizing: border-box;
+    max-width: 1024px;
+  }
+  /* La section concernant les images des produits*/
+
+  .bloc .container .row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    height: auto;
+    .col-sm-6 {
+      border: 2px solid black;
+      width: 45%;
+      height: auto;
+      margin: auto;
+      margin-bottom: 2em;
+      border-radius: 0.5em;
+      img {
+        width: 100%;
+        height: 16em;
+        margin: auto;
+        margin: -0.1em -0.1em -0.1em -0.1em;
+        object-fit: cover;
+        border-radius: 0.5em;
+        border: 2px solid transparent;
+      }
+      h3,
+      .description,
+      .text-center {
+        text-align: center;
+        border: 1px solid gray;
+        margin: 0.2em 0 0.2em 0;
+      }
+    }
+  }
+}
+
+//section affichant la liste des produits en desktop
+.container-produits {
+  width: 100%;
+  .produit {
+    width: 45%;
+    height: auto;
+    margin-right: 4%;
+    margin-bottom: 1.5em;
+    padding-top: 0;
+
+    p {
+      color: black;
+      text-align: center;
+      padding: 0em 0.5em;
+      margin: 0;
+    }
+    h2 {
+      margin: 0;
+      font-size: 1.6em;
+    }
+    img {
+      border-top-right-radius: 1.5em;
+      border-top-left-radius: 1.5em;
+      width: 100%;
+      height: 13em;
+      margin-top: 1em;
+      object-fit: cover;
+    }
+    .ahref {
+      margin: 1em 0em 1.5em 0em;
+    }
+    a {
+      background-color: rgb(236, 236, 245);
+      font-size: 1em;
+      padding: 0.5em 0;
+      font-weight: bold;
+      padding: 0.5em 1em;
+      border-radius: 1em;
+      margin-top: 0.5em;
+      margin-bottom: 0.5em;
+    }
+  }
+}
+
+/* Les mobiles */
+@media screen and (max-width: 599px) {
+  body {
+    margin: 0px;
+    padding: 0px;
+  }
+  .page-container {
+    min-width: 320px;
+    margin: auto;
+    padding: 0px 0px 0px 0px;
+    justify-content: center;
+    box-sizing: border-box;
+    background-color: #fff;
+  }
+  h1 {
+    font-size: 1.4em;
+  }
+  //? header
+  //! header commun de nos pages DESKTOP
+  .headBlock {
+    // background-color: rgba(235, 232, 227, 0.3);
+    border-radius: 0.5em;
+    // padding: 0 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    // width: 95%;
+    border: 0.3em solid rgba(46, 102, 38, 0.1);
+    .partie-logo {
+      display: flex;
+      flex-direction: row;
+      align-content: center;
+      .textorinoco {
+        font-size: 1.2em;
+        align-self: center;
+        margin-left: 0.2em;
+        padding: 0;
+        margin: 0;
+        font-weight: bold;
+        font-family: "Pangolin", sans-serif;
+      }
+      div img {
+        width: 1em;
+        height: auto;
+        padding: 0;
+        margin: 0 1em 0 0;
+        object-fit: cover;
+      }
+    }
+    .partie-nav {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      padding: 0;
+      margin: 0;
+
+      .nav-item {
+        padding: 0em 0.2em;
+        background-color: rgba(5, 87, 238, 0.3);
+        border: 2px solid rgba(196, 191, 191, 0.51);
+        margin-bottom: 0.5em;
+        font-size: 0.8em;
+        a {
+          margin: 0;
+          padding: 0;
+        }
+      }
+    }
+  }
+
+  // Page d'accueil
+  .container-produits {
+    display: flex;
+    flex-direction: column;
+    .produit {
+      width: 90%;
+      .photo img {
+        margin: -0.1em -1em 0em -1em;
+      }
+    }
+  }
+
+  //Page produit une fois produit choisi
+  .produit-seul {
+    .produit {
+      background-color: rgb(241, 237, 237);
+      width: 95%;
+      .photo {
+        margin: auto;
+        padding: 0;
+        img {
+          padding: 0;
+          width: 100%;
+          height: 15em;
+          margin: auto;
+          object-fit: cover;
+          border-radius: 0;
+        }
+      }
+    }
+    .bloc {
+      .divbtn {
+        display: flex;
+        flex-direction: row;
+        .btn {
+          font-size: 0.9em;
+        }
+      }
+    }
+  }
+  .panier {
+    h2 {
+      font-size: 1.1em;
+      span {
+        font-size: 0.9em;
+      }
+    }
+    .container-recap {
+      p {
+        font-size: 0.81em;
+      }
+    }
+    .section-form {
+      h2 {
+        font-size: 1.1em;
+      }
+      legend,
+      label,
+      .name,
+      .prename,
+      .city,
+      .text,
+      .email {
+        font-size: 1em;
+      }
+    }
+  }
+
+  //footer MOBILE
+  .footerBlock {
+    margin: auto;
+    h2 {
+      text-align: center;
+      font-size: 1.2em;
+    }
+    .col-sm-12 {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+      border: none;
+
+      .col-sm-3 {
+        margin: 0;
+        font-size: 0.7em;
+        text-align: center;
+      }
+    }
+    .col-sm-4 {
+      margin-top: 0.5em;
+      h2 {
+        font-size: 0.91em;
+      }
+      .lesPhones {
+        .phone {
+          font-size: 0.8em;
+        }
+      }
+    }
+  }
+}
+
+/* orientation paysage et portrait sur petits écrans */
+@media (orientation: landscape) {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+/* orientation portrait sur mobile */
+@media (orientation: portrait) {
+  body {
+    margin: 0;
+  }
+}

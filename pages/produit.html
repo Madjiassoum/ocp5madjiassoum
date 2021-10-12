@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <title>ORINOCO</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <!-- <link rel="shortcut icon" type="images/png" href="../assets/img/logo.png" /> -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap"
+      rel="stylesheet "
+    />
+    <link rel="stylesheet" href="../sass/style.css" />
+  </head>
+  <body>
+    <!-- Principal conteneur -->
+    <div class="page-container">
+      <header class="headBlock">
+        <div class="partie-logo">
+          <div class="logorinoco">
+            <img src="../assets/img/shopping_cart_400.png" alt="" />
+          </div>
+          <div class="textorinoco">orinoco</div>
+        </div>
+        <div class="partie-nav">
+          <div class="nav-item">
+            <a href="../index.html" class="nav-link">Accueil</a>
+          </div>
+          <div class="nav-item">
+            <a class="nav-link cartCount" href="./panier.html"
+              ><i class="fas fa-shopping-basket"></i>Panier</a
+            >
+          </div>
+        </div>
+      </header>
+      <main id="produit-seul" class="produit-seul">
+        <!-- Lister mes produits-->
+        <h1>Orinoco, ours en peluche faits à la main</h1>
+        <div id="produit" class="produit">
+          <div class="bloc">
+            <h2>Faites votre choix en dessous</h2>
+            <div class="container divbtn">
+              <button
+                id="btnEnvoyer"
+                class="btnEnvoyer btn ajout"
+                onclick="setData"
+                type="submit"
+              >
+                Ajout au panier
+              </button>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="footerBlock">
+        <h2 class="text-center white">Les réseaux sociaux</h2>
+        <div class="col-sm-12">
+          <div class="col-sm-3">
+            <a href="https://www.twitter.com">Twitter</a>
+          </div>
+          <div class="col-sm-3">
+            <a href="https://www.facebook.com">Facebook</a>
+          </div>
+          <div class="col-sm-3">
+            <a href="https://www.instagram.com">Instagram</a>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <h2>Assistance 24H/24</h2>
+          <div class="lesPhones">
+            <p class="phone">Tel 1 +33XXXXXXX13</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="../src/produit.js" defer></script>
+  </body>
+</html>

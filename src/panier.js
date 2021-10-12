@@ -227,7 +227,7 @@ validFormulaire.addEventListener("click", function (event) {
   //   );
 
   function sendFormData(data) {
-    fetch("https://localhost:3000/api/teddies/users", {
+    fetch("http://localhost:3000/api/teddies/users", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

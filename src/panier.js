@@ -227,7 +227,7 @@ validFormulaire.addEventListener("click", function (event) {
   //   );
 
   function sendFormData(data) {
-    fetch("http://localhost:3000/api/teddies/users", {
+    fetch("https://localhost:3000/api/teddies/users", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -241,6 +241,8 @@ validFormulaire.addEventListener("click", function (event) {
       })
       .catch((error) => alert("Erreur : " + error));
   }
+
+
 
   // //  ***** url utilisé dans fetch *****
   // const url = "https://oc-p5-api.herokuapp.com/api/teddies";

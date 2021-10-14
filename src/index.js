@@ -27,4 +27,5 @@ document.addEventListener("DOMContentLoaded", () => {
       .catch((erreur) => console.log(erreur));
   }
   // console.log(produitsListe);
+  
 });

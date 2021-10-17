@@ -1,4 +1,4 @@
-let URL_API_PRODUITS = "http://localhost:3000/api/teddies";
+let URL_API_PRODUITS = "c";
 document.addEventListener("DOMContentLoaded", () => {
   const produitsListe = document.getElementById("container-produits");
   if (produitsListe) {

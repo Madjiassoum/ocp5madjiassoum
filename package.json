@@ -11,7 +11,10 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.16.4",
-    "node":"v16.11.0",
     "uuid": "^3.3.2"
+  },
+  "engines": {
+    "node": "10.13.0",
+    "npm": "8.0.0"
   }
 }

@@ -118,6 +118,8 @@ main,
 }
 //!Page d'accueil des produits
 .container-produits {
+  border: rgba(140, 140, 140, 0.1) .2em solid;
+  border-radius: 1em;
   width: 95%;
   height: auto;
   padding: 1em;
@@ -127,12 +129,12 @@ main,
   flex-wrap: wrap;
   justify-content: center;
   .produit {
-    width: 45%;
+    width: 44%;
     align-self: center;
     align-content: center;
     margin-right: 3%;
     margin-bottom: 1em;
-    border: 1px solid rgb(230, 230, 230);
+    border: .2em solid rgb(200, 200, 200);
     background-color: rgb(220, 220, 220);
     border-top-right-radius: 1.5em;
     border-top-left-radius: 1.5em;
@@ -236,6 +238,7 @@ main,
       margin: 0.2em 1em 0.2em 1em;
       padding: 0.5em;
       font-size: 1.1em;
+      text-align: center;
       background-color: rgba(225, 225, 225, 0.31);
     }
     .price {

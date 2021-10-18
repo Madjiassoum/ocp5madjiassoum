@@ -86,7 +86,6 @@ monPanier.insertAdjacentHTML("beforeend", affichePrixHtml);
 localStorage.setItem("prixTotal", JSON.stringify(prixTotal));
 }
 
-
 // ! suppression du panier
 let emptyButton = document.getElementById("supcontenu");
 emptyButton.addEventListener("click", function () {
@@ -240,11 +239,7 @@ validFormulaire.addEventListener("click", function (event) {
         storeIdName(response);
       })
       .catch((error) => alert("Erreur : " + error));
-  }
-
-
-
-  
+  }  
 
   localStorage.setItem("Formulaire", JSON.stringify(Formulaire));
   });

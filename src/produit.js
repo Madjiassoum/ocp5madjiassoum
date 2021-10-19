@@ -1,11 +1,11 @@
-let url = "http://localhost:3000/api/teddies";
+let url = "https://ocp5-api.herokuapp.com/api/teddies";
 function $_GET(param) {
   const url = new URL(window.location.href);
   return url.searchParams.get(param);
 }
 
 
-const API_UN_PRODUIT = `http://localhost:3000/api/teddies/${$_GET(
+const API_UN_PRODUIT = `https://ocp5-api.herokuapp.com/api/teddies/${$_GET(
   "id"
 )}`;
 

@@ -226,7 +226,7 @@ validFormulaire.addEventListener("click", function (event) {
   //   );
 
   function sendFormData(data) {
-    fetch("http://localhost:3000/api/teddies/users", {
+    fetch("https://ocp5-api.herokuapp.com/api/teddies/users", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
